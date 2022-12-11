@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas_pbol.FXMLDocumentController">
+   <children>
+      <TableView fx:id="table" layoutX="7.0" layoutY="197.0" prefHeight="452.0" prefWidth="601.0">
+        <columns>
+          <TableColumn fx:id="col_nama" prefWidth="144.0" text="Nama" />
+          <TableColumn fx:id="col_umur" prefWidth="51.0" text="Umur" />
+            <TableColumn fx:id="col_gender" prefWidth="67.0" text="Gender" />
+            <TableColumn fx:id="col_kulit" prefWidth="75.0" text="Kulit" />
+            <TableColumn fx:id="col_mata" prefWidth="69.0" text="Mata" />
+            <TableColumn fx:id="col_tinggi" prefWidth="61.0" text="Tinggi" />
+            <TableColumn fx:id="col_rambut" prefWidth="77.0" text="Rambut" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="check_putih" layoutX="14.0" layoutY="86.0" mnemonicParsing="false" onAction="#filterData" text="Putih" />
+      <CheckBox fx:id="check_biru" layoutX="14.0" layoutY="125.0" mnemonicParsing="false" onAction="#filterData" text="Biru" />
+      <CheckBox fx:id="check_hitam" layoutX="115.0" layoutY="86.0" mnemonicParsing="false" onAction="#filterData" text="Hitam" />
+      <CheckBox fx:id="check_coklat" layoutX="115.0" layoutY="125.0" mnemonicParsing="false" onAction="#filterData" text="Coklat" />
+      <CheckBox fx:id="check_hijau" layoutX="199.0" layoutY="125.0" mnemonicParsing="false" onAction="#filterData" text="Hijau" />
+      <CheckBox fx:id="check_panjang" layoutX="14.0" layoutY="163.0" mnemonicParsing="false" onAction="#filterData" text="Panjang" />
+      <CheckBox fx:id="check_pendek" layoutX="115.0" layoutY="163.0" mnemonicParsing="false" onAction="#filterData" text="Pendek" />
+      <Label layoutX="21.0" layoutY="50.0" prefHeight="17.0" prefWidth="247.0" text="Silahkan Check Ciri-Ciri Yang Ingin Anda Cari" />
+   </children>
+</AnchorPane>
